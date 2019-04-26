@@ -2,7 +2,7 @@
 
 namespace WPAppKit\Model;
 
-use NetzdenkeTheme\WordpressBridge\WordpressBridge;
+use WPAppKit\WordpressBridge;
 
 abstract class AbstractModule
 {
