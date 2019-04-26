@@ -1,11 +1,9 @@
 <?php
 
-namespace Netzdenke\WPAppKit\Model;
+namespace WPAppKit\Model;
 
-interface ActionInterface extends HookLoadInterface
+interface FilterInterface extends TagLoadInterface
 {
-    public function doAction();
-
     /**
      * @return int
      */
