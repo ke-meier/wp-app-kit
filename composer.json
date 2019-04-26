@@ -1,9 +1,9 @@
 {
-  "name": "netzdenke/wp-app-kit",
+  "name": "ke-meier/wp-app-kit",
   "authors": [
     {
       "name": "Kevin Meier",
-      "email": "kevin.meier@netzdenke.de"
+      "email": "kevin@netzdenke.de"
     }
   ],
   "require": {
