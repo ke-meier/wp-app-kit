@@ -5,10 +5,10 @@ namespace WPAppKit\Model;
 interface ShortcodeInterface extends TagLoadInterface
 {
     /**
-     * @param array $attributes
+     * @param array|string $attributes
      * @param string $content
      *
      * @return string
      */
-    public function getContent(array $attributes, string $content): string;
+    public function getContent($attributes, string $content): string;
 }
