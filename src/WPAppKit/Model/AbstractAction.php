@@ -7,7 +7,7 @@ abstract class AbstractAction implements ActionInterface
     /**
      * @inheritdoc
      */
-    public function getType()
+    public function getType(): string
     {
         return self::TYPE_ACTION;
     }
@@ -15,7 +15,7 @@ abstract class AbstractAction implements ActionInterface
     /**
      * @inheritdoc
      */
-    public function getPriority()
+    public function getPriority(): int
     {
         return 10;
     }
@@ -23,7 +23,7 @@ abstract class AbstractAction implements ActionInterface
     /**
      * @inheritdoc
      */
-    public function getAcceptedArguments()
+    public function getAcceptedArguments(): int
     {
         return 1;
     }

@@ -32,7 +32,7 @@ class TagLoadRegistry
      *
      * @return TagLoadRegistry
      */
-    public function addTagLoad($tagLoad)
+    public function addTagLoad(TagLoadInterface $tagLoad): TagLoadRegistry
     {
         $this->tagLoads[] = $tagLoad;
 

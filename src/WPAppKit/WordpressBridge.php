@@ -45,7 +45,7 @@ class WordpressBridge
      *
      * @return WordpressBridge
      */
-    public function addTagLoad($tagLoad)
+    public function addTagLoad(TagLoadInterface $tagLoad): WordpressBridge
     {
         $this->tagLoadRegistry->addTagLoad($tagLoad);
 
@@ -57,7 +57,7 @@ class WordpressBridge
      *
      * @return WordpressBridge
      */
-    public function addPostType($postType)
+    public function addPostType(PostTypeInterface $postType): WordpressBridge
     {
         $this->postTypeRegistry->addPostType($postType);
 
@@ -69,7 +69,7 @@ class WordpressBridge
      *
      * @return WordpressBridge
      */
-    public function addEndPoint($endPoint)
+    public function addEndPoint(EndPointInterface $endPoint): WordpressBridge
     {
         $this->endPointRegistry->addEndPoint($endPoint);
 

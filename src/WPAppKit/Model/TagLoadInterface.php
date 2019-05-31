@@ -14,7 +14,7 @@ interface TagLoadInterface
     /**
      * @return string
      */
-    public function getType();
+    public function getType(): string;
 
     /**
      * @return string|array|string[]

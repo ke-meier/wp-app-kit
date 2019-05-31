@@ -7,10 +7,10 @@ interface PostTypeInterface
     /**
      * @return string
      */
-    public function getId();
+    public function getId(): string;
 
     /**
      * @return array
      */
-    public function getConfiguration();
+    public function getConfiguration(): array;
 }

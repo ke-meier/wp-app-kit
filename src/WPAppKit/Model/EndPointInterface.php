@@ -7,10 +7,10 @@ interface EndPointInterface
     /**
      * @return string
      */
-    public function getIdentifier();
+    public function getIdentifier(): string;
 
     /**
      * @return bool
      */
-    public function isAvailableForNotLoggedInUsers();
+    public function isAvailableForNotLoggedInUsers(): bool;
 }

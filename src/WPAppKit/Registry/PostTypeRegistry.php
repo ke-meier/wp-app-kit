@@ -16,7 +16,7 @@ class PostTypeRegistry
      *
      * @return PostTypeRegistry
      */
-    public function addPostType($postType)
+    public function addPostType($postType): PostTypeRegistry
     {
         $this->postTypes[] = $postType;
 

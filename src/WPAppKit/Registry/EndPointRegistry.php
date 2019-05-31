@@ -16,7 +16,7 @@ class EndPointRegistry
      *
      * @return EndPointRegistry
      */
-    public function addEndPoint($endPoint)
+    public function addEndPoint($endPoint): EndPointRegistry
     {
         $this->endPoints[] = $endPoint;
 

@@ -10,7 +10,7 @@ class ShortcodeHandler implements TagLoadHandlerInterface
     /**
      * @inheritdoc
      */
-    public function supports($tagLoad)
+    public function supports(TagLoadInterface $tagLoad): bool
     {
         return $tagLoad->getType() === TagLoadInterface::TYPE_SHORTCODE;
     }
@@ -18,7 +18,7 @@ class ShortcodeHandler implements TagLoadHandlerInterface
     /**
      * @inheritdoc
      */
-    public function handleTagLoad($tagLoad)
+    public function handleTagLoad(TagLoadInterface $tagLoad)
     {
         if (!$this->supports($tagLoad)) {
             return;

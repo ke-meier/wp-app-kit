@@ -9,12 +9,12 @@ interface TagLoadHandlerInterface
     /**
      * @param TagLoadInterface $tagLoad
      *
-     * @return boolean
+     * @return bool
      */
-    public function supports($tagLoad);
+    public function supports(TagLoadInterface $tagLoad): bool;
 
     /**
      * @param TagLoadInterface $tagLoad
      */
-    public function handleTagLoad($tagLoad);
+    public function handleTagLoad(TagLoadInterface $tagLoad);
 }

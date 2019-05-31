@@ -14,7 +14,7 @@ abstract class AbstractModule
     /**
      * @param WordpressBridge $wordpressBridge
      */
-    public function __construct($wordpressBridge)
+    public function __construct(WordpressBridge $wordpressBridge)
     {
         $this->wordpressBridge = $wordpressBridge;
 
