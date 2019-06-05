@@ -26,6 +26,26 @@ class PostTypeRegistry
     public function perform()
     {
         foreach ($this->postTypes as $postType) {
+            $configuration = $postType->getConfiguration();
+            if ($postType->hasMetaBoxes()) {
+                $metaBoxes = $postType->getMetaBoxes();
+                $configuration['register_meta_box_cb'] = function () use ($metaBoxes) {
+                    foreach ($metaBoxes as $metaBox) {
+                        add_meta_box(
+                            $metaBox->getId(),
+                            $metaBox->getTitle(),
+                            [
+                                $metaBox,
+                                'renderMetaBox',
+                            ],
+                            $metaBox->getScreen(),
+                            $metaBox->getContext(),
+                            $metaBox->getPriority()
+                        );
+                    }
+                };
+            }
+
             add_action(
                 'init',
                 function () use ($postType) {
