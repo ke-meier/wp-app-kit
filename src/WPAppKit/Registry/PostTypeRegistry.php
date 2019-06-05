@@ -48,8 +48,8 @@ class PostTypeRegistry
 
             add_action(
                 'init',
-                function () use ($postType) {
-                    register_post_type($postType->getId(), $postType->getConfiguration());
+                function () use ($postType, $configuration) {
+                    register_post_type($postType->getId(), $configuration);
                 }
             );
         }
