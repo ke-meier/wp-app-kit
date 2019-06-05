@@ -3,8 +3,8 @@
 namespace WPAppKit;
 
 use WPAppKit\Model\EndPointInterface;
-use WPAppKit\Model\PostTypeInterface;
 use WPAppKit\Model\TagLoadInterface;
+use WPAppKit\PostType\PostTypeInterface;
 use WPAppKit\Registry\EndPointRegistry;
 use WPAppKit\Registry\PostTypeRegistry;
 use WPAppKit\Registry\TagLoadRegistry;

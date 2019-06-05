@@ -1,6 +1,6 @@
 <?php
 
-namespace WPAppKit\Model;
+namespace WPAppKit\PostType;
 
 interface PostTypeInterface
 {

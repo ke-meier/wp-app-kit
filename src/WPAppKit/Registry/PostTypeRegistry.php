@@ -2,7 +2,7 @@
 
 namespace WPAppKit\Registry;
 
-use WPAppKit\Model\PostTypeInterface;
+use WPAppKit\PostType\PostTypeInterface;
 
 class PostTypeRegistry
 {
