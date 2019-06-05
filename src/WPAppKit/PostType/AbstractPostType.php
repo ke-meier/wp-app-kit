@@ -12,6 +12,16 @@ abstract class AbstractPostType implements PostTypeInterface
     /**
      * @inheritDoc
      */
+    public function addMetaBox(MetaBoxInterface $metaBox): PostTypeInterface
+    {
+        $this->metaBoxes[] = $metaBox;
+
+        return $this;
+    }
+
+    /**
+     * @inheritDoc
+     */
     public function hasMetaBoxes(): bool
     {
         return !empty($this->metaBoxes);
